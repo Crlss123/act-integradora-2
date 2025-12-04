@@ -49,11 +49,11 @@ def tsp(grafo):
             costo_actual += grafo[nodo_actual][nodo]
             nodo_actual = nodo
 
-            costo_actual += grafo[nodo_actual][0]
+        costo_actual += grafo[nodo_actual][0]
 
-            if costo_actual < mejor_costo:
-                mejor_costo = costo_actual
-                mejor_camino = perm
+        if costo_actual < mejor_costo:
+            mejor_costo = costo_actual
+            mejor_camino = perm
 
     res = ["A"]
 
